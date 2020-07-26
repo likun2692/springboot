@@ -1,0 +1,70 @@
+[INFO ] 2020-07-26 10:56:38.192 [restartedMain] example.DemoApplication - Starting DemoApplication on admin-PC with PID 11104 (D:\proTool\workSpace\springboot\target\classes started by Administrator in D:\proTool\workSpace\springboot)
+[INFO ] 2020-07-26 10:56:38.228 [restartedMain] example.DemoApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2020-07-26 10:56:38.764 [background-preinit] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.2.4.Final
+[INFO ] 2020-07-26 10:56:39.198 [restartedMain] o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2240b10f: startup date [Sun Jul 26 10:56:39 CST 2020]; root of context hierarchy
+[INFO ] 2020-07-26 10:56:41.663 [restartedMain] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$f34fe5ba] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO ] 2020-07-26 10:56:42.627 [restartedMain] o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8009 (http)
+[INFO ] 2020-07-26 10:56:42.644 [restartedMain] o.a.catalina.core.StandardService - Starting service Tomcat
+[INFO ] 2020-07-26 10:56:42.646 [restartedMain] o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.4
+[INFO ] 2020-07-26 10:56:42.799 [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2020-07-26 10:56:42.800 [localhost-startStop-1] o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 3602 ms
+[INFO ] 2020-07-26 10:56:43.132 [localhost-startStop-1] o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+[INFO ] 2020-07-26 10:56:43.139 [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+[INFO ] 2020-07-26 10:56:43.140 [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[INFO ] 2020-07-26 10:56:43.140 [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[INFO ] 2020-07-26 10:56:43.140 [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+[INFO ] 2020-07-26 10:56:44.492 [restartedMain] o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2240b10f: startup date [Sun Jul 26 10:56:39 CST 2020]; root of context hierarchy
+[INFO ] 2020-07-26 10:56:44.592 [restartedMain] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/index],methods=[GET]}" onto public java.lang.String example.index.controller.HelloController.index(java.util.Map<java.lang.String, java.lang.String>) throws java.net.UnknownHostException
+[INFO ] 2020-07-26 10:56:44.593 [restartedMain] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/getInfo]}" onto public java.util.Map<java.lang.String, java.lang.Object> example.index.controller.HelloController.getInfo()
+[INFO ] 2020-07-26 10:56:44.594 [restartedMain] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/index],methods=[POST]}" onto public java.lang.String example.index.controller.HelloController.indexs(java.util.Map<java.lang.String, java.lang.String>)
+[INFO ] 2020-07-26 10:56:44.600 [restartedMain] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[INFO ] 2020-07-26 10:56:44.601 [restartedMain] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[INFO ] 2020-07-26 10:56:44.680 [restartedMain] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2020-07-26 10:56:44.681 [restartedMain] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2020-07-26 10:56:44.768 [restartedMain] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2020-07-26 10:56:45.803 [restartedMain] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+[INFO ] 2020-07-26 10:56:45.891 [restartedMain] o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+[INFO ] 2020-07-26 10:56:45.925 [restartedMain] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8009"]
+[INFO ] 2020-07-26 10:56:45.940 [restartedMain] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler [http-nio-8009]
+[INFO ] 2020-07-26 10:56:45.960 [restartedMain] o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+[INFO ] 2020-07-26 10:56:45.983 [restartedMain] o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8009 (http)
+[INFO ] 2020-07-26 10:56:45.990 [restartedMain] example.DemoApplication - Started DemoApplication in 8.87 seconds (JVM running for 10.78)
+[INFO ] 2020-07-26 10:57:10.574 [http-nio-8009-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+[INFO ] 2020-07-26 10:57:10.575 [http-nio-8009-exec-1] o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+[INFO ] 2020-07-26 10:57:10.630 [http-nio-8009-exec-1] o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 55 ms
+[INFO ] 2020-07-26 10:57:10.703 [http-nio-8009-exec-1] example.index.util.WebLogAspect - ################URL : http://127.0.0.1:8009/index
+[INFO ] 2020-07-26 10:57:10.703 [http-nio-8009-exec-1] example.index.util.WebLogAspect - ################HTTP_METHOD : GET
+[INFO ] 2020-07-26 10:57:10.704 [http-nio-8009-exec-1] example.index.util.WebLogAspect - ################IP : 127.0.0.1
+[INFO ] 2020-07-26 10:57:10.704 [http-nio-8009-exec-1] example.index.util.WebLogAspect - ################THE ARGS OF THE CONTROLLER : [{host=127.0.0.1:8009, connection=keep-alive, cache-control=max-age=0, upgrade-insecure-requests=1, user-agent=Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36, accept=text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9, sec-fetch-site=cross-site, sec-fetch-mode=navigate, sec-fetch-user=?1, sec-fetch-dest=document, accept-encoding=gzip, deflate, br, accept-language=zh-CN,zh;q=0.9}]
+[INFO ] 2020-07-26 10:57:10.707 [http-nio-8009-exec-1] example.index.util.WebLogAspect - ################CLASS_METHOD : example.index.controller.HelloController.index
+[INFO ] 2020-07-26 10:57:10.781 [http-nio-8009-exec-1] org.thymeleaf.TemplateEngine - [THYMELEAF] INITIALIZING TEMPLATE ENGINE
+[INFO ] 2020-07-26 10:57:10.896 [http-nio-8009-exec-1] o.t.t.AbstractTemplateResolver - [THYMELEAF] INITIALIZING TEMPLATE RESOLVER: org.thymeleaf.spring4.templateresolver.SpringResourceTemplateResolver
+[INFO ] 2020-07-26 10:57:10.897 [http-nio-8009-exec-1] o.t.t.AbstractTemplateResolver - [THYMELEAF] TEMPLATE RESOLVER INITIALIZED OK
+[INFO ] 2020-07-26 10:57:10.898 [http-nio-8009-exec-1] o.t.m.AbstractMessageResolver - [THYMELEAF] INITIALIZING MESSAGE RESOLVER: org.thymeleaf.spring4.messageresolver.SpringMessageResolver
+[INFO ] 2020-07-26 10:57:10.898 [http-nio-8009-exec-1] o.t.m.AbstractMessageResolver - [THYMELEAF] MESSAGE RESOLVER INITIALIZED OK
+[INFO ] 2020-07-26 10:57:10.906 [http-nio-8009-exec-1] org.thymeleaf.TemplateEngine.CONFIG - [THYMELEAF] TEMPLATE ENGINE CONFIGURATION:
+[THYMELEAF] * Cache Factory implementation: org.thymeleaf.cache.StandardCacheManager
+[THYMELEAF] * Template modes:
+[THYMELEAF]     * XHTML
+[THYMELEAF]     * LEGACYHTML5
+[THYMELEAF]     * VALIDXHTML
+[THYMELEAF]     * XML
+[THYMELEAF]     * VALIDXML
+[THYMELEAF]     * HTML5
+[THYMELEAF] * Template resolvers (in order):
+[THYMELEAF]     * org.thymeleaf.spring4.templateresolver.SpringResourceTemplateResolver
+[THYMELEAF] * Message resolvers (in order):
+[THYMELEAF]     * org.thymeleaf.spring4.messageresolver.SpringMessageResolver
+[THYMELEAF] * Dialect [1 of 2]: org.thymeleaf.spring4.dialect.SpringStandardDialect
+[THYMELEAF]     * Prefix: "th"
+[THYMELEAF] * Dialect [2 of 2]: nz.net.ultraq.thymeleaf.LayoutDialect
+[THYMELEAF]     * Prefix: "layout"
+[THYMELEAF] TEMPLATE ENGINE CONFIGURED OK
+[INFO ] 2020-07-26 10:57:10.906 [http-nio-8009-exec-1] org.thymeleaf.TemplateEngine - [THYMELEAF] TEMPLATE ENGINE INITIALIZED
+[INFO ] 2020-07-26 10:57:11.709 [http-nio-8009-exec-6] example.index.util.WebLogAspect - ################URL : http://127.0.0.1:8009/getInfo
+[INFO ] 2020-07-26 10:57:11.710 [http-nio-8009-exec-6] example.index.util.WebLogAspect - ################HTTP_METHOD : POST
+[INFO ] 2020-07-26 10:57:11.710 [http-nio-8009-exec-6] example.index.util.WebLogAspect - ################IP : 127.0.0.1
+[INFO ] 2020-07-26 10:57:11.710 [http-nio-8009-exec-6] example.index.util.WebLogAspect - ################THE ARGS OF THE CONTROLLER : []
+[INFO ] 2020-07-26 10:57:11.710 [http-nio-8009-exec-6] example.index.util.WebLogAspect - ################CLASS_METHOD : example.index.controller.HelloController.getInfo
+[INFO ] 2020-07-26 11:02:24.828 [Thread-21] o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2240b10f: startup date [Sun Jul 26 10:56:39 CST 2020]; root of context hierarchy
+[INFO ] 2020-07-26 11:02:24.834 [Thread-21] o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown

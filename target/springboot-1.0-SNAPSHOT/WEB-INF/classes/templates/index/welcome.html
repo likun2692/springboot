@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-CN" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Title</title>
+    <!-- 引入样式 -->
+    <link rel="stylesheet" href="css/element.css"/>
+    <script src="js/jquery-1.8.3.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/vue.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/elementjs.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+<div id="app">
+    <div class="tag-group" id="tagid">
+    </div>
+</div>
+</body>
+<script type="text/javascript">
+    var v=new Vue({
+        el:"#app",
+        data:function(){
+            return{
+                total:'3',
+                tableData:[],
+            }
+        },
+        created:function(){
+        },
+        methods:{
+            getInfo:function(){
+                $.ajax({
+                    type: "POST",
+                    url: "getInfo",
+                    data: {
+                    },
+                    dataType: "json",
+                    success: function(data){
+                        var html="";
+                        for(var key in data)  {
+                            //查看效果
+                            var h='<span class="tag-group__title">'+key+'</span><el-tag class="el-tag el-tag--success el-tag--dark" type="info">'+data[key]+'</el-tag>';
+                            html=html+h;
+                        };
+                        $("#tagid").html(html);
+                    }
+                });
+            },
+        },
+        mounted:function(){
+            this.getInfo();
+        }
+    })
+
+
+</script>
+</html>

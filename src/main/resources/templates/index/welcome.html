@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zh-CN" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Title</title>
+    <!-- 引入样式 -->
+    <link rel="stylesheet" href="css/element.css"/>
+    <script src="js/jquery-1.8.3.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/vue.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/elementjs.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+<div id="app">
+    <el-table
+            :data="tableData"
+            stripe="ture"
+            border="ture"
+            style="width: 100%">
+        <el-table-column
+                prop="headerName"
+                label="指标名称"
+                width="260">
+        </el-table-column>
+        <el-table-column
+                prop="headerVal"
+                label="指标值">
+        </el-table-column>
+    </el-table>
+</div>
+</body>
+<script type="text/javascript">
+    var v=new Vue({
+        el:"#app",
+        data:function(){
+            return{
+                tableData:[]
+            }
+        },
+        created:function(){
+        },
+        methods:{
+            getInfo:function(){
+                let _this = this;
+                $.ajax({
+                    type: "POST",
+                    url: "getInfo",
+                    data: {
+                    },
+                    dataType: "json",
+                    success: function(data){
+                        for(var key in data)  {
+                            //查看效果
+                            _this.tableData.push({
+                                headerName: key,
+                                headerVal: data[key]
+                            });
+                        };
+                    }
+                });
+            },
+        },
+        mounted:function(){
+            this.getInfo();
+        }
+    })
+
+
+</script>
+</html>
